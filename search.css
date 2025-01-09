@@ -1,0 +1,46 @@
+
+        /* Container for input and button to align them side by side */
+        .input-container {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Adds space between input and button */
+        }
+
+        /* Styling for the input field */
+        #myInput {
+            width: 180px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Styling for the submit button */
+        #submit-btn {
+            background-color: #4CAF50;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #submit-btn img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Gallery styling */
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+        /* Optional: Styling the footer links */
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }

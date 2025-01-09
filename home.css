@@ -1,0 +1,121 @@
+body{
+min-height: 100px;
+}
+.header {
+    background-color: blue;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding);
+}
+
+.header a {
+  color: var(--text-color);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.header a.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.header-right {
+  margin-left: auto;
+  display: flex;
+  column-gap: var(--padding);
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid ;
+  float: left;
+  width: 180px;
+border-radius: 25px;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+border-radius: 25px;
+}
+
+div.gallery #gal {
+  width:100%;
+  height: fixed;
+    border-radius: 25px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 25px;
+  color: var(--text-color);
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+
+}@media screen and (max-width: 500px) {
+  .header a {
+    display: none;
+  }
+#menu {
+  display: none; /* Hide menu by default */
+}
+
+#menu.open {
+  display: block; /* Show menu when the 'open' class is added */
+}
+.header a.logo{
+display:flex;
+}
+  .header-right {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: var(--padding);
+    border-radius: 5px;
+    display: none;
+  }
+  .header-right a {
+    display: block;
+    text-align: left;
+    padding: 10px;
+  }
+  .header-right.open {
+    display: flex;
+  }
+}
